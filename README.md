@@ -1,4 +1,4 @@
-# RisingStack JavaScript Style Guide() {
+# RisingStack Node.js Style Guide() {
 
 *A mostly reasonable approach to JavaScript - how we write Node.js at RisingStack*
 
@@ -707,7 +707,7 @@ Heavily inspired by
     if (test)
       return false;
 
-    // good
+    // bad
     if (test) return false;
 
     // good
