@@ -474,43 +474,43 @@ Heavily inspired by
 
   - Always check for errors in callbacks
 
-    ```javascript
-      //bad
-      database.get('pokemons', function (err, pokemons) {
-        console.log(pokemons);
-      });
+  ```javascript
+  //bad
+  database.get('pokemons', function (err, pokemons) {
+    console.log(pokemons);
+  });
 
-      //good
-      database.get('drabonballs', function (err, drabonballs) {
-        if (err) {
-          // handle the error somehow, maybe return with a callback
-          return console.log(err);
-        }
-        console.log(drabonballs);
-      });
-    ```
+  //good
+  database.get('drabonballs', function (err, drabonballs) {
+    if (err) {
+      // handle the error somehow, maybe return with a callback
+      return console.log(err);
+    }
+    console.log(drabonballs);
+  });
+  ```
 
   - Return on callbacks
-    ```javascript
-      //bad
-        database.get('drabonballs', function (err, drabonballs) {
-          if (err) {
-            // if not return here
-            console.log(err);
-          }
-          // this line will be executed as well
-          console.log(drabonballs);
-        });
+  ```javascript
+  //bad
+  database.get('drabonballs', function (err, drabonballs) {
+    if (err) {
+      // if not return here
+      console.log(err);
+    }
+    // this line will be executed as well
+    console.log(drabonballs);
+  });
 
-      //good
-        database.get('drabonballs', function (err, drabonballs) {
-          if (err) {
-            // handle the error somehow, maybe return with a callback
-            return console.log(err);
-          }
-          console.log(drabonballs);
-        });
-    ```
+  //good
+  database.get('drabonballs', function (err, drabonballs) {
+    if (err) {
+      // handle the error somehow, maybe return with a callback
+      return console.log(err);
+    }
+    console.log(drabonballs);
+  });
+  ```
 **[⬆ back to top](#table-of-contents)**
 
 
@@ -522,40 +522,40 @@ Heavily inspired by
   down the entire process.
 
   ```javascript
-      //bad
-       function readPackageJson (callback) {
-         fs.readFile('package.json', function (err, file) {
-           if (err) {
-             throw err;
-           }
-           ...
-         });
-       }
-      //good
-      function readPackageJson (callback) {
-        fs.readFile('package.json', function (err, file) {
-          if (err) {
-            return  callback(err);
-          }
-          ...
-        });
+  //bad
+  function readPackageJson (callback) {
+    fs.readFile('package.json', function (err, file) {
+      if (err) {
+        throw err;
       }
+      ...
+    });
+  }
+  //good
+  function readPackageJson (callback) {
+    fs.readFile('package.json', function (err, file) {
+      if (err) {
+        return  callback(err);
+      }
+      ...
+    });
+  }
   ```
 
 - Catch errors in sync calls
 
   ```javascript
-      //bad
-      var data = JSON.parse(jsonAsAString);
+  //bad
+  var data = JSON.parse(jsonAsAString);
 
-      //good
-      var data;
-      try {
-        data = JSON.parse(jsonAsAString);
-      } catch (e) {
-        //handle error - hopefully not with a console.log ;)
-        console.log(e);
-      }
+  //good
+  var data;
+  try {
+    data = JSON.parse(jsonAsAString);
+  } catch (e) {
+    //handle error - hopefully not with a console.log ;)
+    console.log(e);
+  }
   ```
 
 **[⬆ back to top](#table-of-contents)**
