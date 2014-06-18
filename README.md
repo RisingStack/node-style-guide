@@ -1,7 +1,5 @@
 # RisingStack Node.js Style Guide() {
 
-*A mostly reasonable approach to JavaScript - how we write Node.js at RisingStack*
-
 ### Most of the content is taken from the [Airbnb stlyeguide](https://github.com/airbnb/javascript)
 
 Heavily inspired by them as well:
