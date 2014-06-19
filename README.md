@@ -1,4 +1,4 @@
-# RisingStack Node.js Style Guide() {
+# [RisingStack](http://risingstack.com) Node.js Style Guide() {
 
 ### Most of the content is taken from the [Airbnb stlyeguide](https://github.com/airbnb/javascript)
 
