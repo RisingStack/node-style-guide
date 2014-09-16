@@ -3,8 +3,8 @@
 ### Most of the content is taken from the [Airbnb styleguide](https://github.com/airbnb/javascript)
 
 Heavily inspired by them as well:
-- @caolan's [Node.js stlyeguide](http://caolanmcmahon.com/posts/nodejs_style_and_structure)
-- @felixge's [Node.js stlyeguide](https://github.com/felixge/node-style-guide)
+- @caolan's [Node.js styleguide](http://caolanmcmahon.com/posts/nodejs_style_and_structure)
+- @felixge's [Node.js styleguide](https://github.com/felixge/node-style-guide)
 
 ## Table of Contents
 
