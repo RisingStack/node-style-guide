@@ -1,6 +1,6 @@
 # [RisingStack](http://risingstack.com) Node.js Style Guide() {
 
-### Most of the content is taken from the [Airbnb stlyeguide](https://github.com/airbnb/javascript)
+### Most of the content is taken from the [Airbnb styleguide](https://github.com/airbnb/javascript)
 
 Heavily inspired by them as well:
 - @caolan's [Node.js stlyeguide](http://caolanmcmahon.com/posts/nodejs_style_and_structure)
