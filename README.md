@@ -361,16 +361,16 @@ Heavily inspired by them as well:
     ```javascript
     // bad
     var i;
-    var items = getItems(),
-    var dragonball,
-    var goSportsTeam = true,
+    var items = getItems();
+    var dragonball;
+    var goSportsTeam = true;
     var len;
 
     // good
-    var items = getItems(),
-    var goSportsTeam = true,
-    var dragonball,
-    var length,
+    var items = getItems();
+    var goSportsTeam = true;
+    var dragonball;
+    var length;
     var i;
     ```
 
