@@ -374,6 +374,23 @@ Heavily inspired by them as well:
     var i;
     ```
 
+  - Avoid redundant variable names, use `Object` instead.
+
+    ```javascript
+
+    // bad
+    var kaleidoscopeName = '..';
+    var kaleidoscopeLens = [];
+    var kaleidoscopeColors = [];
+
+    // good
+    var kaleidoscope {
+      name: '..',
+      lens: [],
+      colors: []
+    };
+    ```
+
   - Assign variables at the top of their scope. This helps avoid issues with variable declaration and assignment hoisting related issues.
 
     ```javascript
@@ -438,7 +455,7 @@ Heavily inspired by them as well:
       - core modules
       - npm modules
       - others
-      
+
     ```javascript
     // bad
     var Car = require('./models/Car');
