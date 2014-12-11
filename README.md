@@ -374,7 +374,7 @@ Heavily inspired by them as well:
     var i;
     ```
 
-  - Avoid redundant variable names, use `Object`s instead.
+  - Avoid redundant variable names, use `Object` instead.
 
     ```javascript
 
