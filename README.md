@@ -507,6 +507,7 @@ Heavily inspired by them as well:
   ```
 
   - Return on callbacks
+
   ```javascript
   //bad
   database.get('drabonballs', function (err, drabonballs) {
@@ -527,6 +528,30 @@ Heavily inspired by them as well:
     console.log(drabonballs);
   });
   ```
+
+  - Use descriptive arguments in your callback when it is an "interface" for others. It makes your code readable.
+
+  ```javascript
+  // bad
+  function getAnimals(done) {
+    Animal.get(done);
+  }
+
+  // good
+  function getAnimals(done) {
+    Animal.get(function (err, animals) {
+      if(err) {
+        return done(err);
+      }
+
+      return done(null, {
+        dogs: animals.dogs,
+        cats: animals.cats
+      })
+    });
+  }
+  ```
+
 **[⬆ back to top](#table-of-contents)**
 
 
