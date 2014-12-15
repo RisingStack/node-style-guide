@@ -512,7 +512,7 @@ Heavily inspired by them as well:
   });
   ```
 
-  - Use silly arguments in your callback when it is an "interface" for others. It makes your code readable.
+  - Use descriptive arguments in your callback when it is an "interface" for others. It makes your code readable.
 
   ```javascript
   // bad
