@@ -384,7 +384,7 @@ Heavily inspired by them as well:
     var kaleidoscopeColors = [];
 
     // good
-    var kaleidoscope {
+    var kaleidoscope = {
       name: '..',
       lens: [],
       colors: []
