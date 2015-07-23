@@ -492,12 +492,12 @@ Heavily inspired by them as well:
 
   ```javascript
   //bad
-  database.get('pokemons', function (err, pokemons) {
+  database.get('pokemons', function(err, pokemons) {
     console.log(pokemons);
   });
 
   //good
-  database.get('drabonballs', function (err, drabonballs) {
+  database.get('drabonballs', function(err, drabonballs) {
     if (err) {
       // handle the error somehow, maybe return with a callback
       return console.log(err);
@@ -510,7 +510,7 @@ Heavily inspired by them as well:
 
   ```javascript
   //bad
-  database.get('drabonballs', function (err, drabonballs) {
+  database.get('drabonballs', function(err, drabonballs) {
     if (err) {
       // if not return here
       console.log(err);
@@ -520,7 +520,7 @@ Heavily inspired by them as well:
   });
 
   //good
-  database.get('drabonballs', function (err, drabonballs) {
+  database.get('drabonballs', function(err, drabonballs) {
     if (err) {
       // handle the error somehow, maybe return with a callback
       return console.log(err);
@@ -539,7 +539,7 @@ Heavily inspired by them as well:
 
   // good
   function getAnimals(done) {
-    Animal.get(function (err, animals) {
+    Animal.get(function(err, animals) {
       if(err) {
         return done(err);
       }
@@ -565,7 +565,7 @@ Heavily inspired by them as well:
   ```javascript
   //bad
   function readPackageJson (callback) {
-    fs.readFile('package.json', function (err, file) {
+    fs.readFile('package.json', function(err, file) {
       if (err) {
         throw err;
       }
@@ -574,7 +574,7 @@ Heavily inspired by them as well:
   }
   //good
   function readPackageJson (callback) {
-    fs.readFile('package.json', function (err, file) {
+    fs.readFile('package.json', function(err, file) {
       if (err) {
         return  callback(err);
       }
