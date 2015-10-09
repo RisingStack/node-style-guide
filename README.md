@@ -559,7 +559,7 @@ Heavily inspired by them as well:
 
 - Only throw in synchronous functions
 
-  Try-catch blocks cannot be used to wrap async code. They will bubble up to to the top, and bring
+  Try-catch blocks cannot be used to wrap async code. They will bubble up to the top, and bring
   down the entire process.
 
   ```javascript
