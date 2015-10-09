@@ -631,7 +631,7 @@ Heavily inspired by them as well:
     }
     ```
 
-  - Anonymous function expressions hoist their variable name, but not the function assignment.
+  - Anonymous function expressions hoist their variable declaration, but not the function assignment.
 
     ```javascript
     function example() {
@@ -645,7 +645,7 @@ Heavily inspired by them as well:
     }
     ```
 
-  - Named function expressions hoist the variable name, not the function name or the function body.
+  - Named function expressions hoist the variable declaration, but neither the function declaration nor the function body.
 
     ```javascript
     function example() {
