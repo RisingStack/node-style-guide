@@ -1,3 +1,7 @@
+### Depraction notice
+
+We are moving / moved our projects to use [Standard](https://github.com/feross/standard) - check it out!
+
 # [RisingStack](http://risingstack.com) Node.js Style Guide() {
 
 ### Most of the content is taken from the [Airbnb styleguide](https://github.com/airbnb/javascript)
